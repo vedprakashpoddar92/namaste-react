@@ -1,3 +1,155 @@
 #heading{
     color: chocolate;
 }
+:root{
+    background-color: transparent;
+    color: black;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+.header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.header nav ul li {
+    margin: 0 20px;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+.header nav ul li:hover {
+   color: orange;
+}
+.header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    padding: 40px 20px;
+    font-family: sans-serif;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+  
+  .footer-link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-top: 30px;
+  }
+
+  .main-body {
+    min-height: 80vh;
+    max-width: 1280px;
+    margin: auto;
+  }
+  .main-body-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main-body-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    gap: 10px;
+  }
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 0;
+
+  }
+  
+  .search-input {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .card{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .card:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #f1f1f1;
+  }
+
+  .card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
